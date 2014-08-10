@@ -1,4 +1,4 @@
-##Extracting data from file and loading into R
+##Extracting data from file and loading into R; assuming file is in the working directory
 ## First identify classes and then use those to load in memory to reduce time
 sampledata <- read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?", nrows = 5)
 classdata <- sapply(sampledata, class)
